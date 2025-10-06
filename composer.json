@@ -1,0 +1,23 @@
+{
+    "name": "symfony-ddd/library",
+    "type": "ddd-library",
+    "description": "A Symfony bundle providing domain interfaces",
+    "keywords": ["ddd", "library", "value-object", "domain-event", "domain"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Brecska",
+            "email": "peter@brecska.sk"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "DDD\\": "src/"
+        }
+    }
+}
