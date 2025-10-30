@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace DDDValue;
+namespace DDD\Library\Domain\Value;
 
-use DDD\Value;
+use DDD\Library\Domain\Value;
 
 abstract readonly class BoolValue implements Value
 {

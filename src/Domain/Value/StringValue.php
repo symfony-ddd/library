@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace DDDValue\Value;
+namespace DDD\Library\Domain\Value;
 
-use DDD\Value;
+use DDD\Library\Domain\Value;
 
 abstract readonly class StringValue implements Value
 {
@@ -42,11 +42,6 @@ abstract readonly class StringValue implements Value
         return $this->value <= $other->value;
     }
 
-    public function length(): int
-    {
-        return strlen($this->value);
-    }
-
     public function isEmpty(): bool
     {
         return $this->value === '';
@@ -65,15 +60,5 @@ abstract readonly class StringValue implements Value
     public function endsWith(string $suffix): bool
     {
         return str_ends_with($this->value, $suffix);
-    }
-
-    public function toUpper(): string
-    {
-        return strtoupper($this->value);
-    }
-
-    public function toLower(): string
-    {
-        return strtolower($this->value);
     }
 }

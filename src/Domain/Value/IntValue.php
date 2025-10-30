@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace DDDValue;
+namespace DDD\Library\Domain\Value;
 
-use DDD\Value;
+use DDD\Library\Domain\Value;
 
 abstract readonly class IntValue implements Value
 {
@@ -17,12 +17,12 @@ abstract readonly class IntValue implements Value
     {
         return $this->value === $other->value && $this::class === $other::class;
     }
-    
+
     public function neq(IntValue $other): bool
     {
         return !$this->eq($other);
     }
-    
+
     public function gt(IntValue $other): bool
     {
         return $this->value > $other->value;
