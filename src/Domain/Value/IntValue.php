@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace DDD\Library\Domain\Value;
+namespace SymfonyDDD\Library\Domain\Value;
 
-use DDD\Library\Domain\Value;
+use SymfonyDDD\Library\Domain\Value;
 
 abstract readonly class IntValue implements Value
 {

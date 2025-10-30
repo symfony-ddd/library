@@ -1,5 +1,5 @@
 {
-    "name": "ddd/library",
+    "name": "symfony-ddd/library",
     "type": "ddd-library",
     "description": "A framework agnostic structure providing specifying domain concepts",
     "keywords": [
@@ -22,7 +22,7 @@
     "require-dev": {},
     "autoload": {
         "psr-4": {
-            "DDD\\Library\\": "src/"
+            "SymfonyDDD\\": "src/"
         }
     }
 }

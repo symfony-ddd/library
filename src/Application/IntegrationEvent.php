@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace DDD\Library\Application;
+namespace SymfonyDDD\Library\Application;
 
 /**
  * Contract that communicates a state change or decision
